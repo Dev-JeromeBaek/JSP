@@ -1,0 +1,89 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"> <title>Insert title here</title>
+    <style type="text/css">
+    	#TD {
+    		background-color: aqua;
+    	}
+    </style>
+    <script type="text/javascript">
+    	
+    	function goHome() {
+    		var frm = document.frm;
+    		frm.action = "/Curr01_Basic/j34_HW11.jsp";
+    		frm.method = "post";
+    		frm.submit();
+    	}
+    	
+    	function result() {
+    		var frm = document.frm;
+    		frm.action = "/Curr01_Basic/j34_HW13.jsp";
+    		frm.method = "post";
+    		frm.submit();
+    	}
+    
+    </script>
+  </head>
+  <body>
+
+	<%
+		request.setCharacterEncoding("UTF-8");
+	
+		String name = request.getParameter("name");
+		String kor = request.getParameter("kor");
+		String eng = request.getParameter("eng");
+		String math = request.getParameter("math");
+		String total = request.getParameter("total");
+		String avg = request.getParameter("avg");
+		String result = request.getParameter("result");
+	%>
+  
+  	<form name="frm" style="width: 300px;  margin-left: 400px; margin-top: 100px;">
+		<fieldset>
+		<legend style="font-size: 20px; text-align: center;">성적 산출 페이지</legend>
+		<table>
+			<tr>
+				<td id="TD">이 름</td>
+				<td><%= name %></td>
+			</tr>
+			<tr>
+				<td id="TD">국어 점수</td>
+				<td><%= kor %>점</td>
+			</tr>
+			<tr>
+				<td id="TD">영어 점수</td>
+				<td><%= eng %>점</td>
+			</tr>
+			<tr>
+				<td id="TD">수학 점수</td>
+				<td><%= math %>점</td>
+			</tr>
+			<tr>
+				<td id="TD">총 점</td>
+				<td><%= total %>점</td>
+			</tr>
+			<tr>
+				<td id="TD">평 균</td>
+				<td><%= avg %>점</td>
+			</tr>
+		</table>
+		<div style="margin-left: 40px; margin-top: 15px;">
+			<input type="hidden" name="name" value="<%= name %>">
+			<input type="hidden" name="kor" value="<%= kor %>">
+			<input type="hidden" name="eng" value="<%= eng %>">
+			<input type="hidden" name="math" value="<%= math %>">
+			<input type="hidden" name="total" value="<%= total %>">
+			<input type="hidden" name="avg" value="<%= avg %>">
+			<input type="hidden" name="result" value="<%= result %>">
+			<input type="button" value="입력 Page"
+						onclick="javascript:goHome()">&nbsp;&nbsp;&nbsp;
+			<input type="button" value="결과 Page"
+						onclick="javascript:result()">
+		</div>
+		</fieldset>
+	</form>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    <%@ page import="entity.People" %>
+    <%@ page import="java.util.*" %>
+    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>컬렉션 이용하기</title>
+  </head>
+  <body>
+  
+    <h2>인사 정보(여러명을 컬렉션으로 처리)</h2>
+    
+    <%	// scriptrit
+    
+    	ArrayList<People> listc = new ArrayList();
+    	listc.add(new People("둘리", 10));
+    	listc.add(new People("도우너", 20));
+    	listc.add(new People("마이콜", 30));
+    	listc.add(new People("또치", 40));
+    %>
+    
+    1. for문 <br>
+    
+	이름&nbsp;&nbsp;&nbsp;&nbsp;나이 <br>
+	================ <br>
+	<%
+		for(People each : listc) {
+	%>	
+		<%= each.getName()%>&nbsp;&nbsp;&nbsp;&nbsp;<%= each.getAge() %> <br>
+	<%
+		}
+	%>    
+	
+	<hr> <%-- <he> : 선 긋기 --%>
+	
+	2. iterator 사용 <br>
+	
+	<%
+		
+		Iterator<People> itr = listc.iterator();
+		
+		while(itr.hasNext())
+		{
+			People peo = itr.next();
+	%>
+		<%= peo.getName() %>&nbsp;&nbsp;&nbsp;<%= peo.getAge() %> <br>
+    <%
+		}
+    %>
+  </body>
+</html>

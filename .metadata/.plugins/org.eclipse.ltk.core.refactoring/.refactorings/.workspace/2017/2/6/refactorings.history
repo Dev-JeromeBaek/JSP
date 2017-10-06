@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CUrr10_EL_JSTL&apos; to &apos;Curr10_EL_JSTL&apos;" description="Rename resource &apos;CUrr10_EL_JSTL&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/CUrr10_EL_JSTL" name="Curr10_EL_JSTL" stamp="1486704229409" updateReferences="true"/>
+</session>

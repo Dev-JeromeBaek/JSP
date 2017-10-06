@@ -1,0 +1,94 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TAG Element</title>
+  </head>
+  <body>
+    
+    <h2>태그 01</h2>
+    
+    <%-- 1. <br> : 줄바꿈 (종료태그 없음) --%>
+	첫번째 줄 <br>
+	두번째 줄 <br>
+	<hr>
+    
+    <%-- 2. <h번호> : 머릿글, 번호는 1~6, 자동줄바꿈 있음 --%>   
+    <h1>머리긋 h1</h1>
+    <h2>머리긋 h2</h2>
+    <h3>머리긋 h3</h3>
+    <h4>머리긋 h4</h4>
+    <h5>머리긋 h5</h5>
+    <h6>머리긋 h6</h6>
+    <hr>
+	
+    
+    <%-- 3. <p> : 문단 엘리먼트, 
+    			    문단을 구분할 때 사용 (일반적으로 종료태그 생략) --%>
+    <p>ABCDE</p>
+    
+    <%-- 4. <pre> : 양식화된 텍스트 화면 영역,
+    				자간 및 줄바꿈 등이 그대로 적용 출력됨 --%>
+    				ABCDE			123 <br>
+    <pre>ABC		DEFG
+111111
+    </pre>
+    <hr>
+    
+    <%-- 
+    	 5. 목록(List) 엘리먼트 :
+    	 	- <ul> : unOrder List Elements
+    	 	- <ol> : Order List Elements
+    --%>
+    <ul type="disc">		<!-- 리스트 앞에 모양 바꾸는거 알아보기! -->
+    	<li>111</li>
+    	<li>222</li>
+    	<li>333</li>
+    </ul>
+    <ul type="circle">		<!-- 리스트 앞에 모양 바꾸는거 알아보기! -->
+    	<li>111</li>
+    	<li>222</li>
+    	<li>333</li>
+    </ul>
+    <ul type="square" >		<!-- 리스트 앞에 모양 바꾸는거 알아보기! -->
+    	<li>111</li>
+    	<li>222</li>
+    	<li>333</li>
+    </ul>
+    
+    <ol type="A" start="1">
+    	<li>aaa</li>
+    	<li>bbb</li>
+    	<li>ccc</li>
+    </ol>
+    <ol type="a" start="1">
+    	<li>aaa</li>
+    	<li>bbb</li>
+    	<li>ccc</li>
+    </ol>
+    <ol type="1" start="1">
+    	<li>aaa</li>
+    	<li>bbb</li>
+    	<li>ccc</li>
+    </ol>
+    <ol type="!" start="1">
+    	<li>aaa</li>
+    	<li>bbb</li>
+    	<li>ccc</li>
+    </ol>
+    <ol type="가" start="1">
+    	<li>aaa</li>
+    	<li>bbb</li>
+    	<li>ccc</li>
+    </ol>
+    <ol type="ㄱ" start="1">
+    	<li>aaa</li>
+    	<li>bbb</li>
+    	<li>ccc</li>
+    </ol>
+    
+    
+  </body>
+</html>

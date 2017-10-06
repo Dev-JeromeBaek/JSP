@@ -1,0 +1,93 @@
+@CHARSET "UTF-8";
+
+	.a {
+		width: 800px;
+		height: 600px;
+	}
+	
+	.a, .a td {
+		border: 1px solid #ff0080;
+		padding: 40px;
+	}
+	
+/* 	.ftd3 { */
+/* 		width: 300px; */
+/* 	} */
+/* 	.ftd2 { */
+/* 		width: 300px; */
+/* 	} */
+	.std {
+		width: 50px;
+	}
+	.picture1 {
+		background-image: url('/Curr01_Basic/files/치킨.png');
+	}
+	
+	.picture2 {
+		background-image: url('/Curr01_Basic/files/피자.png');
+	}
+	
+	.picture3 {
+		background-image: url('/Curr01_Basic/files/해장국.png');
+	}
+	
+	.picture4 {
+		background-image: url('/Curr01_Basic/files/햄버거.png');
+	}
+
+/* ===================================================================================== */
+
+	.테이블 {
+		width: 300px;
+		height: 300px;
+	}
+/* 	.1행1열 { */
+/* 		width: 600px; */
+/* 		height: 300px; */
+/* 	} */
+/* /* 	.1행2열 { */ */
+/* /* 		width: 300px; */ */
+/* /* 		height: 300px; */ */
+/* /* 	} */ */
+/* 	.1행3열 { */
+/* 		width: 30px; */
+/* 		height: 30px; */
+/* 	} */
+/* 	.1행4열 { */
+/* 		width: 30px; */
+/* 		height: 30px; */
+/* 	} */
+/* 	.2행1열 { */
+/* 		width: 300px; */
+/* 		height: 300px; */
+/* 	} */
+/* 	.2행2열 { */
+/* 		width: 800px; */
+/* 		height: 800px; */
+/* 	} */
+/* /* 	.2행3열 { */ */
+/* /* 		width: 300px; */ */
+/* /* 		height: 300px; */ */
+/* /* 	} */ */
+/* 	.2행4열 { */
+/* 		width: 300px; */
+/* 		height: 300px; */
+/* 	} */
+/* 	.3행1열 { */
+/* 		width: 300px; */
+/* 		height: 300px; */
+/* 	} */
+/* 	.3행2열 { */
+/* 		width: 300px; */
+/* 		height: 300px; */
+/* 	} */
+/* 	.3행3열 { */
+/* 		width: 300px; */
+/* 		height: 300px; */
+/* 	} */
+/* 	.3행4열 { */
+/* 		width: 300px; */
+/* 		height: 300px; */
+/* 	} */
+	
+	

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Curr11_Ajax&apos; to &apos;Curr11_Ajax_Jquery&apos;" description="Rename resource &apos;Curr11_Ajax&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Curr11_Ajax" name="Curr11_Ajax_Jquery" stamp="1486948144955" updateReferences="true"/>
+</session>

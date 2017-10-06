@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Curr01_Basic</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- ============================================================================= -->
+  
+  <!-- 서블릿에 대한 URL 매핑 -->
+  <!-- servlet : 서블릿의 클래스 파일에 대한 별명 설정 (왜? 그냥 이름이 길어서....) -->
+  <servlet>
+    <!-- name 다음에  class 순서! -->
+    <servlet-name>aaa</servlet-name>
+    <servlet-class>myServlet.J02_AAA</servlet-class>
+    <!-- servlet-class : 패키지.파일이름 -->
+  </servlet>
+  
+  
+  
+  <!-- <servlet-mapping> : URL과 서블릿 별명간의 연결점 -->
+  <servlet-mapping>
+<!--   servlet-name :이 설정되면 url로 연결시켜라. -->
+    <servlet-name>aaa</servlet-name>
+    <url-pattern>/a</url-pattern> <!-- "/" 필수!! : 프로젝트이름 다음의 경로를 의미함. -->
+  </servlet-mapping>
+  
+  <!-- ============================================================================= -->
+  
+  <servlet>
+    <servlet-name>bb</servlet-name>
+    <servlet-class>myServlet.J02_Quiz</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>bb</servlet-name>
+    <url-pattern>/b</url-pattern>
+  </servlet-mapping>
+
+  <!-- ============================================================================= -->
+  
+</web-app>

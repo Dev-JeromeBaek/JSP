@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Curr02_Basic</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- servlet Mapping myServlet.J01_Servlet-->
+  
+  <servlet>
+    <servlet-name>svl01</servlet-name>
+    <servlet-class>myServlet.J01_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>svl01</servlet-name>
+    <url-pattern>/s01</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 예외 처리 (j07_error02.jsp) -->
+  <error-page>
+  	<!-- 만약 이런 예외상황이 발생 하면?(ex : java.lang.ArrayIndexOutOfBoundsException -->
+  	<exception-type>java.lang.ArrayIndexOutOfBoundsException</exception-type> 
+  	<!-- 어디 페이지를 보여줘라.!(ex :  -->
+  	<location>/j07_errorView.jsp</location>
+  	<!-- 경로 표현 시 (/)로 시작하면 자동으로 프로젝트 이름이 적용됨. -->
+  </error-page>
+</web-app>

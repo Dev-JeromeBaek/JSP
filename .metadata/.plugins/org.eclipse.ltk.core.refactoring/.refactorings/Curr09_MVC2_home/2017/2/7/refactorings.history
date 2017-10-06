@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;dao&apos; to &apos;Curr10_EL_JSTL/src&apos;&#x0D;&#x0A;- Original project: &apos;Curr09_MVC2_home&apos;&#x0D;&#x0A;- Destination element: &apos;Curr10_EL_JSTL/src&apos;&#x0D;&#x0A;- Original element: &apos;Curr09_MVC2_home/src/dao&apos;" description="Copy package" destination="=Curr10_EL_JSTL/src" element1="/src&lt;dao" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1486945421864" version="1.0"/>
+</session>
